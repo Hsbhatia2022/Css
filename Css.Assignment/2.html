@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>CSS Color Properties</title>
+    <style>
+        /* Color properties */
+        .color-example {
+            color: blue;
+            /* text color */
+        }
+
+        .background-color-example {
+            background-color: yellow;
+            /* background color */
+        }
+
+        .gradient-example {
+            background-image: linear-gradient(to bottom, red, orange);
+            /* gradient background */
+        }
+
+        /* Background properties */
+        .background-image-example {
+            background-image: url('image.jpg');
+            /* background image */
+            background-repeat: no-repeat;
+            /* don't repeat the image */
+            background-position: center;
+            /* center the image */
+        }
+
+        .background-repeat-example {
+            background-image: url('image.jpg');
+            background-repeat: repeat-x;
+            /* repeat the image horizontally */
+        }
+
+        .background-position-example {
+            background-image: url('image.jpg');
+            background-position: 50% 50%;
+            /* position the image at 50% 50% */
+        }
+    </style>
+</head>
+
+<body>
+    <h1>CSS Color Properties</h1>
+
+    <!-- Color properties -->
+    <p class="color-example">This text is blue.</p>
+    <p class="background-color-example">This background is yellow.</p>
+    <p class="gradient-example">This background has a gradient from red to orange.</p>
+
+    <!-- Background properties -->
+    <div class="background-image-example">
+        <p>This div has a background image that is not repeated and is centered.</p>
+    </div>
+
+    <div class="background-repeat-example">
+        <p>This div has a background image that is repeated horizontally.</p>
+    </div>
+
+    <div class="background-position-example">
+        <p>This div has a background image that is positioned at 50% 50%.</p>
+    </div>
+</body>
+
+</html>

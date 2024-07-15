@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CSS Variables Example</title>
+	<style>
+		:root {
+			/* Define CSS variables */
+			--primary-color: #333;
+			--secondary-color: #666;
+			--font-size-large: 24px;
+			--font-size-medium: 18px;
+			--font-size-small: 14px;
+			--spacing-large: 20px;
+			--spacing-medium: 15px;
+			--spacing-small: 10px;
+		}
+		
+		body {
+			font-family: Arial, sans-serif;
+			margin: var(--spacing-medium);
+		}
+		
+		h1 {
+			color: var(--primary-color);
+			font-size: var(--font-size-large);
+			margin-bottom: var(--spacing-small);
+		}
+		
+		p {
+			color: var(--secondary-color);
+			font-size: var(--font-size-medium);
+			margin-bottom: var(--spacing-medium);
+		}
+		
+		.button {
+			background-color: var(--primary-color);
+			color: #fff;
+			padding: var(--spacing-small) var(--spacing-medium);
+			border: none;
+			border-radius: 5px;
+			cursor: pointer;
+		}
+		
+		.button:hover {
+			background-color: var(--secondary-color);
+		}
+		
+		.container {
+			width: 300px;
+			padding: var(--spacing-medium);
+			border: 1px solid var(--primary-color);
+			border-radius: 10px;
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+		}
+	</style>
+</head>
+<body>
+	<h1>CSS Variables Example</h1>
+	
+	<p>This is a paragraph of text.</p>
+	
+	<button class="button">Click me!</button>
+	
+	<div class="container">
+		<p>This is a container with a border and padding.</p>
+	</div>
+</body>
+</html>

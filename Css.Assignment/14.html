@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CSS Animations Demonstration</title>
+	<style>
+		/* Global styles */
+		body {
+			font-family: Arial, sans-serif;
+			margin: 20px;
+		}
+		
+		.container {
+			width: 300px;
+			height: 300px;
+			border: 1px solid #ddd;
+			padding: 20px;
+		}
+		
+		.box {
+			width: 100px;
+			height: 100px;
+			background-color: #ccc;
+			border: 1px solid #aaa;
+			padding: 10px;
+		}
+		
+		/* Animation keyframes */
+		@keyframes spin {
+			0% {
+				transform: rotate(0deg);
+			}
+			100% {
+				transform: rotate(360deg);
+			}
+		}
+		
+		@keyframes bounce {
+			0% {
+				transform: translateY(0px);
+			}
+			50% {
+				transform: translateY(-20px);
+			}
+			100% {
+				transform: translateY(0px);
+			}
+		}
+		
+		@keyframes fade {
+			0% {
+				opacity: 0;
+			}
+			100% {
+				opacity: 1;
+			}
+		}
+		
+		/* Animation examples */
+		.animation-spin {
+			animation: spin 2s linear infinite;
+		}
+		
+		.animation-bounce {
+			animation: bounce 1.5s ease-out 2;
+		}
+		
+		.animation-fade {
+			animation: fade 0.5s ease-in;
+		}
+		
+		.animation-duration {
+			animation: spin 4s linear infinite;
+		}
+		
+		.animation-timing-function {
+			animation: bounce 1.5s ease-in-out 2;
+		}
+		
+		.animation-delay {
+			animation: fade 0.5s ease-in 2s;
+		}
+		
+		.animation-iteration-count {
+			animation: spin 2s linear 3;
+		}
+	</style>
+</head>
+<body>
+	<h1>CSS Animations Demonstration</h1>
+	
+	<div class="container">
+		<p>Check out the animations below!</p>
+		
+		<!-- Spin animation -->
+		<div class="box animation-spin">Spin animation (2s linear infinite)</div>
+		
+		<!-- Bounce animation -->
+		<div class="box animation-bounce">Bounce animation (1.5s ease-out 2)</div>
+		
+		<!-- Fade animation -->
+		<div class="box animation-fade">Fade animation (0.5s ease-in)</div>
+		
+		<!-- Animation duration -->
+		<div class="box animation-duration">Animation duration (4s)</div>
+		
+		<!-- Animation timing function -->
+		<div class="box animation-timing-function">Animation timing function (ease-in-out)</div>
+		
+		<!-- Animation delay -->
+		<div class="box animation-delay">Animation delay (2s)</div>
+		
+		<!-- Animation iteration count -->
+		<div class="box animation-iteration-count">Animation iteration count (3)</div>
+	</div>
+</body>
+</html>

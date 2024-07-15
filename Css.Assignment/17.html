@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Form Elements with CSS Styling</title>
+	<style>
+		/* Global styles */
+		body {
+			font-family: Arial, sans-serif;
+			margin: 20px;
+		}
+		
+		.container {
+			width: 300px;
+			padding: 20px;
+			border: 1px solid #ddd;
+			border-radius: 10px;
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+		}
+		
+		/* Form element styles */
+		form {
+			margin: 20px;
+		}
+		
+		label {
+			display: block;
+			margin-bottom: 10px;
+		}
+		
+		input[type="text"], input[type="email"], input[type="password"] {
+			width: 100%;
+			padding: 10px;
+			margin-bottom: 20px;
+			border: 1px solid #ccc;
+			border-radius: 5px;
+		}
+		
+		input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focus {
+			border-color: #aaa;
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+		}
+		
+		input[type="checkbox"] {
+			margin: 10px;
+		}
+		
+		input[type="radio"] {
+			margin: 10px;
+		}
+		
+		select {
+			width: 100%;
+			padding: 10px;
+			margin-bottom: 20px;
+			border: 1px solid #ccc;
+			border-radius: 5px;
+		}
+		
+		select:focus {
+			border-color: #aaa;
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+		}
+		
+		/* Validation styles */
+		.invalid {
+			border-color: #red;
+			box-shadow: 0 0 10px rgba(255, 0, 0, 0.5);
+		}
+		
+		.valid {
+			border-color: #green;
+			box-shadow: 0 0 10px rgba(0, 128, 0, 0.5);
+		}
+	</style>
+</head>
+<body>
+	<h1>Form Elements with CSS Styling</h1>
+	
+	<div class="container">
+		<form>
+			<label for="name">Name:</label>
+			<input type="text" id="name" name="name" required>
+			
+			<label for="email">Email:</label>
+			<input type="email" id="email" name="email" required>
+			
+			<label for="password">Password:</label>
+			<input type="password" id="password" name="password" required>
+			
+			<label for="checkbox">Checkbox:</label>
+			<input type="checkbox" id="checkbox" name="checkbox">
+			
+			<label for="radio">Radio button:</label>
+			<input type="radio" id="radio" name="radio">
+			
+			<label for="select">Select menu:</label>
+			<select id="select" name="select">
+				<option value="">Select an option</option>
+				<option value="option1">Option 1</option>
+				<option value="option2">Option 2</option>
+				<option value="option3">Option 3</option>
+			</select>
+			
+			<button type="submit">Submit</button>
+		</form>
+	</div>
+	
+	<script>
+		// Add event listeners for validation
+		document.addEventListener("DOMContentLoaded", function() {
+			var form = document.querySelector("form");
+			var inputs = form.querySelectorAll("input, select");
+			
+			inputs.forEach(function(input) {
+				input.addEventListener("blur", function() {
+					if (input.checkValidity()) {
+						input.classList.add("valid");
+						input.classList.remove("invalid");
+					} else {
+						input.classList.add("invalid");
+						input.classList.remove("valid");
+					}
+				});
+			});
+		});
+	</script>
+</body>
+</html>

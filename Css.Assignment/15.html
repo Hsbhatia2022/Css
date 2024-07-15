@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CSS Transforms Demonstration</title>
+	<style>
+		/* Global styles */
+		body {
+			font-family: Arial, sans-serif;
+			margin: 20px;
+		}
+		
+		.container {
+			width: 300px;
+			height: 300px;
+			border: 1px solid #ddd;
+			padding: 20px;
+		}
+		
+		.box {
+			width: 100px;
+			height: 100px;
+			background-color: #ccc;
+			border: 1px solid #aaa;
+			padding: 10px;
+			margin: 20px;
+			display: inline-block;
+		}
+		
+		/* Transform examples */
+		.translate {
+			transform: translate(50px, 20px);
+		}
+		
+		.rotate {
+			transform: rotate(45deg);
+		}
+		
+		.scale {
+			transform: scale(1.5);
+		}
+		
+		.skew {
+			transform: skew(20deg, 10deg);
+		}
+		
+		.combine {
+			transform: translate(50px, 20px) rotate(45deg) scale(1.5) skew(20deg, 10deg);
+		}
+		
+		.perspective {
+			perspective: 500px;
+		}
+		
+		.transform-3d {
+			transform: translateZ(50px) rotateY(45deg);
+		}
+	</style>
+</head>
+<body>
+	<h1>CSS Transforms Demonstration</h1>
+	
+	<div class="container">
+		<p>Check out the transforms below!</p>
+		
+		<!-- Translate -->
+		<div class="box translate">Translate (50px, 20px)</div>
+		
+		<!-- Rotate -->
+		<div class="box rotate">Rotate (45deg)</div>
+		
+		<!-- Scale -->
+		<div class="box scale">Scale (1.5)</div>
+		
+		<!-- Skew -->
+		<div class="box skew">Skew (20deg, 10deg)</div>
+		
+		<!-- Combine transforms -->
+		<div class="box combine">Combine transforms (translate, rotate, scale, skew)</div>
+		
+		<!-- Perspective and 3D transform -->
+		<div class="perspective">
+			<div class="box transform-3d">3D transform (translateZ, rotateY)</div>
+		</div>
+	</div>
+</body>
+</html>

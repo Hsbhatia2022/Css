@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Responsive Webpage</title>
+	<style>
+		/* Global styles */
+		body {
+			font-family: Arial, sans-serif;
+			margin: 0;
+			padding: 0;
+		}
+		
+		/* Desktop layout (default) */
+		.container {
+			max-width: 1200px;
+			margin: 40px auto;
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
+		}
+		
+		.sidebar {
+			width: 30%;
+			background-color: #f0f0f0;
+			padding: 20px;
+		}
+		
+		.main-content {
+			width: 70%;
+			background-color: #fff;
+			padding: 20px;
+		}
+		
+		/* Tablet layout (max-width: 768px) */
+		@media only screen and (max-width: 768px) {
+			.container {
+				flex-direction: column;
+			}
+			
+			.sidebar {
+				width: 100%;
+				background-color: #f0f0f0;
+				padding: 20px;
+			}
+			
+			.main-content {
+				width: 100%;
+				background-color: #fff;
+				padding: 20px;
+			}
+		}
+		
+		/* Mobile layout (max-width: 480px) */
+		@media only screen and (max-width: 480px) {
+			.container {
+				flex-direction: column;
+			}
+			
+			.sidebar {
+				display: none;
+			}
+			
+			.main-content {
+				width: 100%;
+				background-color: #fff;
+				padding: 20px;
+				font-size: 18px;
+			}
+		}
+		
+		/* Extra small mobile layout (max-width: 320px) */
+		@media only screen and (max-width: 320px) {
+			.main-content {
+				font-size: 16px;
+			}
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="sidebar">
+			<h2>Sidebar</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+		</div>
+		<div class="main-content">
+			<h1>Main Content</h1>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+		</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Flexbox Layout</title>
+	<style>
+		/* Container element */
+		.container {
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
+			align-items: center;
+			height: 100vh;
+			background-color: #f0f0f0;
+		}
+		
+		/* Individual items */
+		.item {
+			background-color: #ccc;
+			padding: 20px;
+			margin: 10px;
+			border: 1px solid #aaa;
+			border-radius: 10px;
+			flex-basis: 200px; /* set a minimum width for each item */
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="item">Item 1</div>
+		<div class="item">Item 2</div>
+		<div class="item">Item 3</div>
+		<div class="item">Item 4</div>
+	</div>
+</body>
+</html>

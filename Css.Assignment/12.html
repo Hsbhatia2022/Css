@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Z-Index Demonstration</title>
+	<style>
+		/* Global styles */
+		body {
+			font-family: Arial, sans-serif;
+			margin: 20px;
+		}
+		
+		.container {
+			position: relative;
+			width: 300px;
+			height: 300px;
+			border: 1px solid #ddd;
+			padding: 20px;
+		}
+		
+		.box {
+			position: absolute;
+			width: 100px;
+			height: 100px;
+			background-color: #ccc;
+			border: 1px solid #aaa;
+			padding: 10px;
+		}
+		
+		/* Z-index values */
+		.z1 {
+			z-index: 1;
+		}
+		
+		.z2 {
+			z-index: 2;
+		}
+		
+		.z3 {
+			z-index: 3;
+		}
+		
+		.z4 {
+			z-index: 4;
+		}
+		
+		.z5 {
+			z-index: 5;
+		}
+	</style>
+</head>
+<body>
+	<h1>Z-Index Demonstration</h1>
+	
+	<div class="container">
+		<!-- Box 1: z-index 1 -->
+		<div class="box z1" style="top: 50px; left: 50px;">Box 1 (z-index: 1)</div>
+		
+		<!-- Box 2: z-index 2 -->
+		<div class="box z2" style="top: 70px; left: 70px;">Box 2 (z-index: 2)</div>
+		
+		<!-- Box 3: z-index 3 -->
+		<div class="box z3" style="top: 90px; left: 90px;">Box 3 (z-index: 3)</div>
+		
+		<!-- Box 4: z-index 4 -->
+		<div class="box z4" style="top: 110px; left: 110px;">Box 4 (z-index: 4)</div>
+		
+		<!-- Box 5: z-index 5 -->
+		<div class="box z5" style="top: 130px; left: 130px;">Box 5 (z-index: 5)</div>
+	</div>
+	
+	<p>Notice how the boxes overlap each other based on their z-index values.</p>
+	
+	<p>Try changing the z-index values to see how it affects the stacking order.</p>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* CSS */
+        img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+        }
+
+        /* Optional: Add a max-width to prevent images from getting too large */
+        img {
+            max-width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- HTML -->
+    <img srcset="image-320w.jpg 320w, image-480w.jpg 480w, image-640w.jpg 640w" src="image-640w.jpg"
+        alt="Responsive Image">
+</body>
+
+</html>

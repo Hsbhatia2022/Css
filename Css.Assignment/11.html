@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CSS Positioning Techniques</title>
+	<style>
+		/* Global styles */
+		body {
+			font-family: Arial, sans-serif;
+			margin: 20px;
+		}
+		
+		.container {
+			background-color: #f0f0f0;
+			padding: 20px;
+			border: 1px solid #ddd;
+		}
+		
+		/* Positioning examples */
+		.static {
+			position: static;
+			background-color: #ccc;
+			padding: 10px;
+			border: 1px solid #aaa;
+		}
+		
+		.relative {
+			position: relative;
+			top: 20px;
+			left: 30px;
+			background-color: #ccc;
+			padding: 10px;
+			border: 1px solid #aaa;
+		}
+		
+		.absolute {
+			position: absolute;
+			top: 50px;
+			left: 100px;
+			background-color: #ccc;
+			padding: 10px;
+			border: 1px solid #aaa;
+		}
+		
+		.fixed {
+			position: fixed;
+			top: 0;
+			right: 0;
+			background-color: #ccc;
+			padding: 10px;
+			border: 1px solid #aaa;
+		}
+		
+		.sticky {
+			position: sticky;
+			top: 10px;
+			background-color: #ccc;
+			padding: 10px;
+			border: 1px solid #aaa;
+		}
+	</style>
+</head>
+<body>
+	<h1>CSS Positioning Techniques</h1>
+	
+	<!-- Static positioning -->
+	<div class="container">
+		<p>This is a static element:</p>
+		<div class="static">I'm a static element!</div>
+		<p>Notice how it takes up space in the document flow.</p>
+	</div>
+	
+	<!-- Relative positioning -->
+	<div class="container">
+		<p>This is a relative element:</p>
+		<div class="relative">I'm a relative element!</div>
+		<p>Notice how it takes up space in the document flow, but is offset from its original position.</p>
+	</div>
+	
+	<!-- Absolute positioning -->
+	<div class="container">
+		<p>This is an absolute element:</p>
+		<div class="absolute">I'm an absolute element!</div>
+		<p>Notice how it doesn't take up space in the document flow and is positioned relative to its nearest positioned ancestor.</p>
+	</div>
+	
+	<!-- Fixed positioning -->
+	<div class="container">
+		<p>This is a fixed element:</p>
+		<div class="fixed">I'm a fixed element!</div>
+		<p>Notice how it doesn't take up space in the document flow and is positioned relative to the viewport.</p>
+	</div>
+	
+	<!-- Sticky positioning -->
+	<div class="container">
+		<p>This is a sticky element:</p>
+		<div class="sticky">I'm a sticky element!</div>
+		<p>Notice how it takes up space in the document flow, but is stuck to the top of the viewport when scrolled.</p>
+	</div>
+	
+	<!-- Scroll down to see the sticky element in action! -->
+	<div style="height: 1000px;"></div>
+</body>
+</html>

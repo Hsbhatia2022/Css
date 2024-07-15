@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CSS Box Model</title>
+	<style>
+		/* Box Model Examples */
+		.box-model-example {
+			width: 200px;
+			height: 100px;
+			background-color: #f0f0f0;
+			margin: 20px;
+		}
+		
+		.content-box {
+			box-sizing: content-box;
+		}
+		
+		.border-box {
+			box-sizing: border-box;
+		}
+		
+		/* Padding Example */
+		.padding-example {
+			padding: 20px;
+			background-color: #fff;
+			border: 1px solid #666;
+		}
+		
+		/* Border Example */
+		.border-example {
+			border-width: 10px;
+			border-style: solid;
+			border-color: #ccc;
+			background-color: #fff;
+		}
+		
+		/* Margin Example */
+		.margin-example {
+			margin: 30px;
+			background-color: #fff;
+			border: 1px solid #666;
+		}
+	</style>
+</head>
+<body>
+	<h1>CSS Box Model</h1>
+	
+	<!-- Box Model Explanation -->
+	<p>The CSS box model consists of four parts: content area, padding, border, and margin.</p>
+	<p>The <code>box-sizing</code> property can be used to switch between the <code>content-box</code> and <code>border-box</code> models.</p>
+	
+	<!-- Box Model Examples -->
+	<h2>Content Box Model</h2>
+	<div class="box-model-example content-box">
+		<p>This div uses the content box model. Its total width is 200px (content) + 20px (padding) + 10px (border) + 20px (margin) = 250px.</p>
+	</div>
+	
+	<h2>Border Box Model</h2>
+	<div class="box-model-example border-box">
+		<p>This div uses the border box model. Its total width is 200px (including padding and border), and then add 20px (margin) = 220px.</p>
+	</div>
+	
+	<!-- Padding Example -->
+	<h2>Padding Example</h2>
+	<div class="box-model-example padding-example content-box">
+		<p>This div has increased padding. Its total width is 200px (content) + 40px (padding) = 240px.</p>
+	</div>
+	
+	<div class="box-model-example padding-example border-box">
+		<p>This div has increased padding, but its total width is still 200px because it uses the border box model.</p>
+	</div>
+	
+	<!-- Border Example -->
+	<h2>Border Example</h2>
+	<div class="box-model-example border-example content-box">
+		<p>This div has a thicker border. Its total width is 200px (content) + 20px (padding) + 20px (border) = 240px.</p>
+	</div>
+	
+	<div class="box-model-example border-example border-box">
+		<p>This div has a thicker border, but its total width is still 200px because it uses the border box model.</p>
+	</div>
+	
+	<!-- Margin Example -->
+	<h2>Margin Example</h2>
+	<div class="box-model-example margin-example">
+		<p>This div has increased margin. Its total width is still 200px, but it has an additional 30px of margin on each side.</p>
+	</div>
+</body>
+</html>

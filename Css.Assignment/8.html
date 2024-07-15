@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Complex Grid Layout</title>
+	<style>
+		/* Outer grid container */
+		.outer-grid {
+			display: grid;
+			grid-template-areas:
+				"header header"
+				"nav main"
+				"footer footer";
+			grid-template-rows: 100px 1fr 100px;
+			grid-template-columns: 200px 1fr;
+			height: 100vh;
+			background-color: #f0f0f0;
+		}
+		
+		/* Header grid item */
+		.header {
+			grid-area: header;
+			background-color: #ccc;
+			padding: 20px;
+		}
+		
+		/* Nav grid item */
+		.nav {
+			grid-area: nav;
+			background-color: #aaa;
+			padding: 20px;
+		}
+		
+		/* Main grid item */
+		.main {
+			grid-area: main;
+			display: grid;
+			grid-template-areas:
+				"sidebar content"
+				"sidebar content";
+			grid-template-rows: 1fr 1fr;
+			grid-template-columns: 200px 1fr;
+			padding: 20px;
+		}
+		
+		/* Sidebar grid item */
+		.sidebar {
+			grid-area: sidebar;
+			background-color: #bbb;
+			padding: 20px;
+		}
+		
+		/* Content grid item */
+		.content {
+			grid-area: content;
+			background-color: #ddd;
+			padding: 20px;
+		}
+		
+		/* Footer grid item */
+		.footer {
+			grid-area: footer;
+			background-color: #eee;
+			padding: 20px;
+		}
+	</style>
+</head>
+<body>
+	<div class="outer-grid">
+		<div class="header">Header</div>
+		<div class="nav">Nav</div>
+		<div class="main">
+			<div class="sidebar">Sidebar</div>
+			<div class="content">Content</div>
+		</div>
+		<div class="footer">Footer</div>
+	</div>
+</body>
+</html>

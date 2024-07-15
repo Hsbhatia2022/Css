@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CSS Transitions Demonstration</title>
+	<style>
+		/* Global styles */
+		body {
+			font-family: Arial, sans-serif;
+			margin: 20px;
+		}
+		
+		.container {
+			width: 300px;
+			height: 300px;
+			border: 1px solid #ddd;
+			padding: 20px;
+		}
+		
+		.box {
+			width: 100px;
+			height: 100px;
+			background-color: #ccc;
+			border: 1px solid #aaa;
+			padding: 10px;
+			transition: all 0.5s ease-in-out; /* default transition */
+		}
+		
+		.box:hover {
+			background-color: #666;
+			color: #fff;
+			width: 150px;
+			height: 150px;
+		}
+		
+		/* Transition examples */
+		.transition-duration {
+			transition-duration: 2s;
+		}
+		
+		.transition-timing-function {
+			transition-timing-function: linear;
+		}
+		
+		.transition-delay {
+			transition-delay: 1s;
+		}
+		
+		.transition-property {
+			transition-property: background-color, width;
+		}
+		
+		.transition-all {
+			transition: all 1s ease-in-out;
+		}
+		
+		.transition-color {
+			transition: color 0.5s linear;
+		}
+		
+		.transition-background-color {
+			transition: background-color 1s ease-out;
+		}
+		
+		.transition-width {
+			transition: width 2s ease-in;
+		}
+		
+		.transition-height {
+			transition: height 1.5s linear;
+		}
+	</style>
+</head>
+<body>
+	<h1>CSS Transitions Demonstration</h1>
+	
+	<div class="container">
+		<p>Hover over the boxes to see the transitions in action!</p>
+		
+		<!-- Default transition -->
+		<div class="box">Default transition (all 0.5s ease-in-out)</div>
+		
+		<!-- Transition duration -->
+		<div class="box transition-duration">Transition duration (2s)</div>
+		
+		<!-- Transition timing function -->
+		<div class="box transition-timing-function">Transition timing function (linear)</div>
+		
+		<!-- Transition delay -->
+		<div class="box transition-delay">Transition delay (1s)</div>
+		
+		<!-- Transition property -->
+		<div class="box transition-property">Transition property (background-color, width)</div>
+		
+		<!-- Transition all -->
+		<div class="box transition-all">Transition all (1s ease-in-out)</div>
+		
+		<!-- Transition color -->
+		<div class="box transition-color">Transition color (0.5s linear)</div>
+		
+		<!-- Transition background color -->
+		<div class="box transition-background-color">Transition background color (1s ease-out)</div>
+		
+		<!-- Transition width -->
+		<div class="box transition-width">Transition width (2s ease-in)</div>
+		
+		<!-- Transition height -->
+		<div class="box transition-height">Transition height (1.5s linear)</div>
+	</div>
+</body>
+</html>

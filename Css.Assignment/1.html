@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Assignment 1: Selectors and Properties</title>
+    <style>
+        /* Element selector: style all paragraphs */
+        p {
+            color: blue;
+        }
+
+        /* Class selector: style elements with class "paragraph" */
+        .paragraph {
+            background-color: yellow;
+        }
+
+        /* ID selector: style the element with id "main-heading" */
+        #main-heading {
+            font-size: 36px;
+        }
+
+        /* Attribute selector: style links with a target attribute */
+        a[target] {
+            color: green;
+        }
+
+        /* Pseudo-class selector: style links on hover */
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* Pseudo-element selector: style the first letter of each paragraph */
+        p::first-letter {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        /* Style the container and its contents */
+        .container {
+            background-color: lightgray;
+            padding: 20px;
+        }
+
+        .container h2 {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 id="main-heading">Main Heading</h1>
+    <p class="paragraph">This is a paragraph of text.</p>
+    <p class="paragraph">This is another paragraph of text.</p>
+    <p>This is a paragraph without a class.</p>
+    <a href="https://www.example.com">Visit Example.com</a>
+    <a href="https://www.google.com" target="_blank">Visit Google.com (opens in new tab)</a>
+    <div class="container">
+        <h2>A heading inside a container</h2>
+        <p>A paragraph inside a container.</p>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Complex Flexbox Layout</title>
+	<style>
+		/* Outer container */
+		.outer-container {
+			display: flex;
+			flex-wrap: wrap;
+			align-content: space-between;
+			height: 100vh;
+			background-color: #f0f0f0;
+		}
+		
+		/* Inner containers */
+		.inner-container {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			padding: 20px;
+			margin: 10px;
+			border: 1px solid #aaa;
+			border-radius: 10px;
+			flex-basis: 300px; /* set a minimum width for each inner container */
+		}
+		
+		/* Flex items */
+		.item {
+			background-color: #ccc;
+			padding: 10px;
+			margin: 10px;
+			border: 1px solid #aaa;
+			border-radius: 10px;
+		}
+		
+		/* Order the items */
+		.item:nth-child(1) {
+			order: 2;
+		}
+		.item:nth-child(2) {
+			order: 1;
+		}
+		.item:nth-child(3) {
+			order: 3;
+		}
+		.item:nth-child(4) {
+			order: 4;
+		}
+		.item:nth-child(5) {
+			order: 5;
+		}
+	</style>
+</head>
+<body>
+	<div class="outer-container">
+		<div class="inner-container">
+			<div class="item">Item 1</div>
+			<div class="item">Item 2</div>
+		</div>
+		<div class="inner-container">
+			<div class="item">Item 3</div>
+			<div class="item">Item 4</div>
+		</div>
+		<div class="inner-container">
+			<div class="item">Item 5</div>
+		</div>
+	</div>
+</body>
+</html>
